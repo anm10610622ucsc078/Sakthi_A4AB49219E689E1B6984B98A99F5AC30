@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Handwritten Digit Recognition</title>
+
+    <style>
+
+        body {
+
+            text-align: center;
+
+            font-family: Arial, sans-serif;
+
+        }
+
+        canvas {
+
+            border: 2px solid black;
+
+            cursor: crosshair;
+
+        }
+
+        .buttons {
+
+            margin-top: 10px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Handwritten Digit Recognition</h2>
+
+    <canvas id="canvas" width="280" height="280"></canvas>
+
+    <div class="buttons">
+
+        <button onclick="clearCanvas()">Clear</button>
+
+        <button onclick="predictDigit()">Predict</button>
+
+    </div>
+
+    <h3>Prediction: <span id="prediction">?</span></h3>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
